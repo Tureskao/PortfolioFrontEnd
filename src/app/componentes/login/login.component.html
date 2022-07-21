@@ -1,0 +1,61 @@
+
+<div class="container">
+    <div class="card-mb3">
+        <div class="card-body">
+            <form [formGroup]="form" (ngSubmit)="onSubmit($event)">
+              
+              
+              <div class="form-group">
+
+                <label for="exampleInputEmail1">Email</label>
+                <input type="email" formControlName='email' class="form-control" id="input-email" aria-describedby="emailHelp" placeholder="Ingrese email">
+                
+                <div *ngIf="Email?.untouched">
+                  <small id="emailHelp" class="form-text text-muted">No compartiremos su dirección de correo con nadie.</small>
+                </div>
+                    
+                <!-- Validadores de Email -->
+                <div *ngIf="Email?.errors && Email?.touched">                  
+                  <p *ngIf="Email?.hasError('required')" class="text-danger">
+                    El email es un campo requerido.
+                  </p>
+                  
+                  <p *ngIf="Email?.hasError('email')" class="text-danger">
+                    El formato de email debe ser válido.
+                  </p>
+
+                </div>
+                
+              </div>
+              
+              <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" formControlName='password' class="form-control" id="input-password" placeholder="Password">
+                  
+                  <!-- Validadores de Password -->
+                  <div *ngIf="Password?.errors && Password?.touched">                  
+                    <p *ngIf="Password?.hasError('required')" class="text-danger">
+                      La contraseña es un campo requerido.
+                    </p>
+                    
+                    <p *ngIf="Password?.hasError('minlength')"class="text-danger">
+                          El password debe ser de 8 o más caracteres.
+                        </p>
+                  </div>
+
+                  <div *ngIf="Password?.untouched || Password?.valid">
+                    <br/>
+                  </div>
+
+              </div>
+              
+              <button type="submit" class="btn btn-primary" [disabled]="form.invalid">Submit</button>
+              
+            </form>
+
+        </div>
+    </div>
+</div>
+          
+          
+          

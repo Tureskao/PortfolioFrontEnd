@@ -1,1 +1,143 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+
+#navbar-name {
+    color:bisque;
+    margin-left: 20px;
+}
+
+
+/* lista de contactos de la navbar */
+
+#navbar-contact{
+    list-style-type:none;
+    font-size: 2em;
+    margin-bottom: 0;
+    margin-top: 0px;
+    margin-right: 30px;
+}
+
+#login-btn{
+    margin-bottom: 10px;
+}
+
+/* Si cada li de la ul tiene display: inline-block, queda una lista horizontal*/
+
+
+.navbar-contact-item {
+    display: inline-block;
+}
+
+.fa-instagram{
+    color:bisque;
+}
+
+.fa-facebook-square{
+    color:bisque;
+}
+
+.fa-twitter-square{
+    color:bisque;
+}
+
+.fa-github-square{
+    color:bisque;
+}
+
+/* portfolio card elements */
+
+#first-card{
+    margin-top: 100px;
+}
+
+
+
+#edit-about{
+    color: black;
+}
+
+
+#portfolio-pfp{
+    max-width: 150px;
+    height: auto;
+    border-radius: 50%;
+    position: relative;
+    bottom: 20px; left:20px;
+}
+
+#editPFP-btn{
+    position:sticky;
+}
+
+#portfolio-profile{
+    position: relative;
+    bottom: 2rem;
+    padding-bottom: 0px;
+    padding-left: 2rem;
+}
+
+#portfolio-banner{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.card-text{
+    margin: none;
+    padding: none;
+}
+
+.profile-contact-item {
+    display: inline-block;
+}
+
+#portfolio-btns {
+    padding-left: 0px;
+    margin-bottom: 0px;
+}
+
+/* Third card */
+
+#experience-header{
+    padding-bottom: 20px;
+}
+
+#edit-experience{
+    color: black;
+}
+
+#education-header{
+    padding-bottom: 20px;
+}
+
+#edit-education{
+    color: black;
+}
+
+.education-image{
+    max-width: 100px;
+    max-height: auto;
+}
+
+.education-item{
+    display: inline-block;
+    padding:  0px;
+}
+
+.education-image-subitem{
+    padding: 0px;
+}
+
+.education-item-title{
+    padding-left: 0px;
+}
+
+.education-item-content{
+    list-style-type: none;
+}
+
+/*Fourth card (Skills)*/
+
+.skill-h7{
+    margin-bottom:5px;
+}
