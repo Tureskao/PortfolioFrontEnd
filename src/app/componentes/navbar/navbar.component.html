@@ -28,7 +28,18 @@
             </li>
             <li class="navbar-contact-item">       
                 <form>
-                    <button id="login-btn" class="btn btn-outline-success btn-sm" type="button">Login</button>
+                    <button id="login-btn"
+                     class="btn btn-outline-success btn-sm" 
+                     type="button"
+                     routerLink="/login"
+                     *ngIf="authService.login">Login
+                    </button>
+                    <button id="login-btn"
+                    class="btn btn-outline-success btn-sm" 
+                    type="button"
+                    routerLink="/login"
+                    *ngIf="!authService.login">Logout
+                   </button>
                 </form>
             </li>
         </ul>

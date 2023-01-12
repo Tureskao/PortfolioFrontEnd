@@ -8,10 +8,17 @@
               <div class="form-group">
 
                 <label for="exampleInputEmail1">Email</label>
-                <input type="email" formControlName='email' class="form-control" id="input-email" aria-describedby="emailHelp" placeholder="Ingrese email">
+                <input type="email"
+                 formControlName='email' 
+                 class="form-control" 
+                 id="input-email" 
+                 aria-describedby="emailHelp" 
+                 placeholder="Ingrese email">
                 
                 <div *ngIf="Email?.untouched">
-                  <small id="emailHelp" class="form-text text-muted">No compartiremos su dirección de correo con nadie.</small>
+                  <small id="emailHelp" class="form-text text-muted">
+                    No compartiremos su dirección de correo con nadie.
+                  </small>
                 </div>
                     
                 <!-- Validadores de Email -->
@@ -30,7 +37,11 @@
               
               <div class="form-group">
                   <label for="exampleInputPassword1">Password</label>
-                  <input type="password" formControlName='password' class="form-control" id="input-password" placeholder="Password">
+                  <input type="password"
+                   formControlName='password'
+                   class="form-control" 
+                   id="input-password" 
+                   placeholder="Password">
                   
                   <!-- Validadores de Password -->
                   <div *ngIf="Password?.errors && Password?.touched">                  
@@ -44,12 +55,19 @@
                   </div>
 
                   <div *ngIf="Password?.untouched || Password?.valid">
-                    <br/>
+                    <br>
                   </div>
 
               </div>
+
+              <br>
               
-              <button type="submit" class="btn btn-primary" [disabled]="form.invalid">Submit</button>
+              <button type="submit"
+               class="btn btn-primary"
+               style="margin-right: 10px"
+               [disabled]="form.valid">Ingresar</button>
+
+              <button class="btn btn-primary" routerLink="/portfolio">Volver</button>
               
             </form>
 

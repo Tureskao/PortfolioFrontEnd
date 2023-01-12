@@ -1,0 +1,17 @@
+                                    <ul class="education-element">
+                                        
+                                        <li class="education-item">
+                                            <img src={{educacion.educationImg}} class = "education-image">
+                                        </li>
+                                        <a id="edit-education" href="#">
+                                            <i class="fa-solid fa-pencil"></i> 
+                                        </a>
+                                        <li class="education-item">
+                                            <ul class="education-item-content">
+                                                <li>
+                                                    <h5 class="education-item-title">{{educacion.educationTitle}}</h5>
+                                                    <p class="education-item-description">{{educacion.educationItemDescription}}</p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>

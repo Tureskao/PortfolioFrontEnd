@@ -1,0 +1,38 @@
+#experience-header{
+    padding-bottom: 20px;
+}
+
+#education-header{
+    padding-bottom: 20px;
+}
+
+
+.education-image{
+    float: left;
+    max-width: 100px;
+    max-height: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 20px;
+    clear: both;
+}
+
+.education-item{
+    display: inline-block;
+    padding:  0px;
+    margin-bottom: 20px;
+}
+
+.education-image-subitem{
+    padding: 0px;
+}
+
+.education-item-title{
+    padding-left: 0px;
+}
+
+.education-item-content{
+    list-style-type: none;
+    display: inline;
+}
+

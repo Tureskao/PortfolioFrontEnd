@@ -8,6 +8,22 @@
 }
 
 
+/*Botones Globales*/
+.new-item{
+    color: black;
+}
+
+.edit-item{
+    float:right;
+    color: black;
+}
+
+.delete-item{
+    float:right;
+    color: black;
+    padding-left: 10px;
+}
+
 /* lista de contactos de la navbar */
 
 #navbar-contact{
@@ -98,43 +114,6 @@
 
 /* Third card */
 
-#experience-header{
-    padding-bottom: 20px;
-}
-
-#edit-experience{
-    color: black;
-}
-
-#education-header{
-    padding-bottom: 20px;
-}
-
-#edit-education{
-    color: black;
-}
-
-.education-image{
-    max-width: 100px;
-    max-height: auto;
-}
-
-.education-item{
-    display: inline-block;
-    padding:  0px;
-}
-
-.education-image-subitem{
-    padding: 0px;
-}
-
-.education-item-title{
-    padding-left: 0px;
-}
-
-.education-item-content{
-    list-style-type: none;
-}
 
 /*Fourth card (Skills)*/
 
